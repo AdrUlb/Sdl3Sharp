@@ -34,6 +34,7 @@ public static class Sdl
 	public static class Gl
 	{
 		public static void SetAttribute(SdlGlAttribute attribute, int value) => SDL_GL_SetAttribute(attribute, value);
+		public static void SetSwapInterval(int interval) => SDL_GL_SetSwapInterval(interval);
 		public static nint GetProcAddress(string proc) => SDL_GL_GetProcAddress(proc);
 		public static void SwapWindow(SdlWindow window) => SDL_GL_SwapWindow(window.Ptr);
 	}

@@ -193,6 +193,10 @@ internal static partial class Imports
 	[return: MarshalAs(UnmanagedType.U1)]
 	internal static partial bool SDL_GL_SetAttribute(SdlGlAttribute attr, int value);
 
+	[LibraryImport(_libraryName)]
+	[return: MarshalAs(UnmanagedType.U1)]
+	internal static partial bool SDL_GL_SetSwapInterval(int interval);
+
 
 	[LibraryImport(_libraryName, StringMarshalling = StringMarshalling.Utf8)]
 	[return: MarshalAs(UnmanagedType.U1)]
