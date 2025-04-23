@@ -1,5 +1,3 @@
-using System.Diagnostics.CodeAnalysis;
-
 namespace Sdl3Sharp;
 
 public readonly record struct SdlWindowId
